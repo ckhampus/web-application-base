@@ -9,11 +9,11 @@ exec('./silex/compile');
 
 echo "Creating directories\n";
 
-if (mkdir(__DIR__.'/log');) {
+if (mkdir(__DIR__.'/log')) {
     echo "* Log directory created";
 }
 
-if (mkdir(__DIR__.'/cache');) {
+if (mkdir(__DIR__.'/cache')) {
     echo "* Cache directory created";
 }
 
