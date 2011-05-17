@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+
+echo "Initializing Git Submodules\n";
+exec('git submodule init');
+
+chdir(__DIR__.'/silex');
+exec('git submodule init');
+
+echo "Building Silex\n";
+exec('./compile');
+
+echo "Creating directories\n";
+mkdir(__DIR__.'/log');
+

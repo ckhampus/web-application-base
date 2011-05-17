@@ -1,0 +1,9 @@
+[submodule "silex"]
+	path = silex
+	url = git://github.com/fabpot/Silex.git
+[submodule "vendor\\twig"]
+	path = vendor\\twig
+	url = git://github.com/fabpot/Twig.git
+[submodule "vendor\\monolog"]
+	path = vendor\\monolog
+	url = git://github.com/Seldaek/monolog.git
