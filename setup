@@ -8,7 +8,7 @@ exec('git submodule update --init --recursive');
 echo "\nBuilding Silex\n";
 echo "------------------------------\n";
 exec('./silex/compile');
-exec('cp silex.phar silex/silex.phar');
+exec('mv silex.phar silex/silex.phar');
 
 echo "\nCreating directories\n";
 echo "------------------------------\n";
