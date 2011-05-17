@@ -8,6 +8,7 @@ exec('git submodule update --init --recursive');
 echo "\nBuilding Silex\n";
 echo "------------------------------\n";
 exec('./silex/compile');
+exec('cp silex.phar silex/silex.phar');
 
 echo "\nCreating directories\n";
 echo "------------------------------\n";
@@ -17,6 +18,6 @@ if (mkdir(__DIR__.'/log')) {
 }
 
 if (mkdir(__DIR__.'/cache')) {
-    echo "* Cache directory created\b";
+    echo "* Cache directory created\n";
 }
 
