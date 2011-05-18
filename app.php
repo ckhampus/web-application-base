@@ -19,8 +19,4 @@ $app->register(new Silex\Extension\TwigExtension(), array(
     'twig.class_path' => __DIR__.'/vendor/twig/lib'
 ));
 
-$app->get('/', function () {
-    return 'Hello, World!'; 
-});
-
 return $app;

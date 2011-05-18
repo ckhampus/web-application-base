@@ -19,6 +19,10 @@ if (mkdir(__DIR__.'/log')) {
     echo "* Log directory created\n";
 }
 
+if (mkdir(__DIR__.'/views')) {
+    echo "* Views directory created\n";
+}
+
 if (mkdir(__DIR__.'/cache')) {
     exec('chmod 0775 cache');
     echo "* Cache directory created\n";
