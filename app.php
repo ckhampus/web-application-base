@@ -19,4 +19,13 @@ $app->register(new Silex\Extension\TwigExtension(), array(
     'twig.class_path' => __DIR__.'/vendor/twig/lib'
 ));
 
+$app->mount('/admin', fucntion () use ($app) {
+    $admin  = new Silex\LazyApplication(__DIR__.'/admin.php');
+    $admin['service'] = $admin->share(function () use ($app) {
+        return $app['service'];
+    });
+    
+    return $admin;
+});
+
 return $app;
